@@ -1,0 +1,55 @@
+<!DOCTYPE <html>
+<html lang="en">
+<head>
+              <meta charset="UTF-8">
+              <meta http-equiv="X-UA-Compatible" content="IE=edge">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <title>Banner Rotativo</title>
+              <link rel="stylesheet" href="style.css">
+              <style>
+              #dvslider{
+              width: 1000px;
+              height: 300px;
+              border: 1px solid #000;
+              }
+              </style>
+              <script>
+              
+              
+              var imgs=[];
+              var slider;
+              var imgAtual;
+              var maxImg;
+              
+              
+              
+              function preCarregamento(){
+              var s=1;
+              for(var i=0;i<5;i++){
+              imgs[i]=new img();
+              img[i].src="imgs/s"+s+".jpg";
+              s++;
+              }
+}
+function carregarImg(img){
+slider.style.backgroundImge="url('"+imgs[img].src+"')";
+
+
+}
+
+function inicia(){
+precarregamento()
+imgAtual=1;
+maxImg=imgs.length;
+slider=document.getElementById("divslider");
+carregarImg(imgAtual);
+}
+window.addEventListener("load",inicia);
+              </script>
+</head>
+<body>
+  <div id="dvslider">
+  
+  </div>
+</body>
+</html>
